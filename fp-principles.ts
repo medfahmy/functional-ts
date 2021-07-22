@@ -81,7 +81,7 @@ function array2list(arrayLike: any) {
 const range = (low: number) => (high: number): any =>
 	low > high ? null : pair(low)(range(low + 1)(high));
 
-const map = (f: any) => (xs: any): any =>
+const map = (f: any) => (xs: any):any =>
 	xs === null ? null : pair(f(head(xs)))(map(f)(tail(xs)));
 
 //console.log(list2array(map((n: number) => n * n)(range(1)(5))));

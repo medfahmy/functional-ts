@@ -1,7 +1,7 @@
-const appendEmoji = (fixed: any) => (dynamic: any) => fixed + dynamic;
+const append = (fixed: any) => (dynamic: any) => fixed + dynamic;
 
-const rain = appendEmoji("🌧 ");
-const sun = appendEmoji("☀ ");
+const rain = append("🌧 ");
+const sun = append("☀ ");
 
 // console.log(rain("today"));
 // console.log(sun("tomorrow"));
